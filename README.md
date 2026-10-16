@@ -20,16 +20,18 @@ Available in **English**, **हिंदी (Hindi)**, and **मराठी (Ma
 
 ### 3. 🔍 Interactive Tools & Threat Detectors
 - **Email Breach Checker:** Real-time search of public data breach records via XposedOrNot to detect compromised accounts without storing personal data.
-- **Link & Domain Authenticity Inspector:** Automated analyzer that detects unencrypted HTTP protocols, raw IP addresses, typosquatting brand impersonation (SBI, HDFC, Paytm, etc.), deceptive subdomains, and scam keywords (`kyc`, `pan`, `cashback`, `lottery`).
+- **Link, Domain & Email Authenticity Inspector:** Multi-layer security analyzer executing live DNS resolution, SSL/TLS certificate verification, redirect unmasking (for URL shorteners like `bit.ly`), mail exchange (MX) & DMARC/SPF anti-spoofing checks, and heuristic detection for brand impersonation, deceptive subdomains, and scam keywords.
 - **Interactive Cyber-Safety Quiz:** Real-world fraud scenario questions with instant score calculations and detailed rationales.
 - **Live Field Survey Analytics:** Direct real-time synchronization with Google Form survey responses, rendering interactive charts and community awareness metrics.
 
 ### 4. 🤖 AI Agent Integration (Model Context Protocol - MCP)
-- Embedded MCP server at `/mcp` exposing 4 tools for external AI models and assistants:
+- Embedded MCP server at `/mcp` exposing 5 tools for external AI models and assistants:
+  - `inspect_link_authenticity`: Deep multi-vector domain, link, and email authenticity analysis.
   - `list_awareness_articles`: Query safety articles in any language.
   - `check_email_leak`: Check email breach status.
   - `get_cyber_safety_guide`: Retrieve helplines and safety checklists.
   - `get_survey_results`: Query community field survey aggregates.
+
 
 ---
 

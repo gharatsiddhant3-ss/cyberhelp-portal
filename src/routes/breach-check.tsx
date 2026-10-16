@@ -14,7 +14,14 @@ export const Route = createFileRoute("/breach-check")({
 function Page() {
   const t = useT();
   const check = useServerFn(checkEmailBreach);
-  const [email, setEmail] = useState("");
+  const [email, setEmail] = useState(() => {
+    if (typeof window !== "undefined") {
+      const q = new URLSearchParams(window.location.search).get("email");
+      return q ? q.trim() : "";
+    }
+    return "";
+  });
+
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState<{ ok: boolean; breaches: string[] } | null>(null);
   const [err, setErr] = useState("");

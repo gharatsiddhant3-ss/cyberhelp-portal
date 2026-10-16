@@ -19,9 +19,11 @@ function Index() {
         <h1 className="mt-5 text-4xl md:text-6xl font-extrabold leading-tight">{t(home.title)}</h1>
         <p className="mt-5 text-lg text-muted-foreground">{t(home.sub)}</p>
         <div className="mt-8 flex flex-wrap gap-3">
-          <Link to="/contact" className="btn-primary">{t(home.cta)}</Link>
+          <Link to="/safety" className="btn-primary">🔍 {t(home.inspectCta)}</Link>
+          <Link to="/contact" className="btn-ghost">{t(home.cta)}</Link>
           <Link to="/breach-check" className="btn-ghost">{t(home.check)}</Link>
         </div>
+
       </section>
       <div className="card-panel border-destructive/50 bg-destructive/10 flex flex-wrap items-center justify-between gap-4">
         <p className="font-semibold">{t(home.emergency)}</p>

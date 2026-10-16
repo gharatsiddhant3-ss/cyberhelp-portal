@@ -31,10 +31,11 @@ export const home = {
   badge: { en: "Free cyber help for everyone", hi: "सभी के लिए मुफ्त साइबर सहायता", mr: "सर्वांसाठी मोफत सायबर मदत" },
   title: { en: "Scammed, hacked or unsure? We're here to help.", hi: "ठगी, हैकिंग या संदेह? हम मदद के लिए हैं।", mr: "फसवणूक, हॅकिंग किंवा शंका? आम्ही मदतीला आहोत." },
   sub: {
-    en: "Learn how to stay safe online, report cybercrime fast, and check if your email was leaked.",
-    hi: "ऑनलाइन सुरक्षित रहना सीखें, साइबर अपराध की तुरंत रिपोर्ट करें, और जांचें कि आपका ईमेल लीक हुआ या नहीं।",
-    mr: "ऑनलाइन सुरक्षित कसे राहायचे ते शिका, सायबर गुन्ह्याची त्वरित तक्रार करा आणि तुमचा ईमेल लीक झाला का ते तपासा.",
+    en: "Learn how to stay safe online, inspect suspicious links & sender emails, report cybercrime fast, and check if your email was leaked.",
+    hi: "ऑनलाइन सुरक्षित रहें, संदिग्ध लिंक और प्रेषक ईमेल जांचें, साइबर अपराध की तुरंत रिपोर्ट करें, और डेटा लीक देखें।",
+    mr: "ऑनलाइन सुरक्षित राहा, संशयास्पद लिंक्स व ईमेल तपासा, सायबर गुन्ह्याची त्वरित तक्रार करा आणि डेटा लीक तपासा.",
   },
+  inspectCta: { en: "Inspect link / email", hi: "लिंक / ईमेल जांचें", mr: "लिंक / ईमेल तपासा" },
   cta: { en: "Get help now", hi: "अभी मदद लें", mr: "आता मदत घ्या" },
   check: { en: "Check email leak", hi: "ईमेल लीक जांचें", mr: "ईमेल लीक तपासा" },
   emergency: {
@@ -43,6 +44,7 @@ export const home = {
     mr: "फसवणुकीत पैसे गेले? लगेच 1930 वर कॉल करा — पहिले काही तास सर्वात महत्त्वाचे.",
   },
 };
+
 
 export const articles: { title: L; body: L }[] = [
   {
